@@ -162,3 +162,22 @@ function bodyScrollingToggle() {
         popup.querySelector(".pp-project-category").innerHTML = category.split("-").join(" ");
     }
 })();
+
+/* -----------------email.js  start---------------*/
+function sendEmail(params) {
+    const tempParams = {
+        from_name: document.getElementById("fromName").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("msg").value
+    };
+    console.log("tempParams", tempParams)
+    // emailjs.send('gmail', 'template_gvhvupg', tempParams)
+    //     .then(res => console.log(res.status))
+
+    emailjs.send('gmail', 'template_gvhvupg', tempParams)
+        .then(function (res) {
+            console.log('success', res.status)
+        })
+}
+

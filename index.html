@@ -11,10 +11,16 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- default color skin -->
   <link rel="stylesheet" type="text/css" href="css/skins/color-1.css" />
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_5BW8l8ebdIkqHhXb0pkd9");
+    })();
+  </script>
 </head>
 
 <body>
-
   <!--header start  -->
   <header class="header">
     <div class="container">
@@ -439,7 +445,7 @@
               <!-- view project btn -->
               <span class="view-project">view project</span>
             </div>
-            <p class="portfolio-item-title">Project 1</p>
+            <p class="portfolio-item-title">Blue Jazz</p>
             <!-- portfolio item details start -->
             <div class="portfolio-item-details">
               <div class="row">
@@ -468,12 +474,12 @@
         <div class="portfolio-item" data-category="full-stack-web-app">
           <div class="portfolio-item-inner outer-shadow">
             <div class="portfolio-item-img">
-              <img src="img/portfolio//thumb/project-1.png" alt="portfolio thumb"
+              <img src="img/portfolio//thumb/project-2.png" alt="portfolio thumb"
                 data-screenshot="img/portfolio/large/project-1/1.png,img/portfolio/large/project-1/2.png">
               <!-- view project btn -->
               <span class="view-project">view project</span>
             </div>
-            <p class="portfolio-item-title">Project 2</p>
+            <p class="portfolio-item-title">Dhaka Mass Transport System</p>
             <!-- portfolio item details start -->
             <div class="portfolio-item-details">
               <div class="row">
@@ -502,12 +508,12 @@
         <div class="portfolio-item" data-category="full-stack-web-app">
           <div class="portfolio-item-inner outer-shadow">
             <div class="portfolio-item-img">
-              <img src="img/portfolio//thumb/project-1.png" alt="portfolio thumb"
+              <img src="img/portfolio//thumb/project-3.png" alt="portfolio thumb"
                 data-screenshot="img/portfolio/large/project-1/1.png,img/portfolio/large/project-1/2.png">
               <!-- view project btn -->
               <span class="view-project">view project</span>
             </div>
-            <p class="portfolio-item-title">Project 3</p>
+            <p class="portfolio-item-title">ShopUp</p>
             <!-- portfolio item details start -->
             <div class="portfolio-item-details">
               <div class="row">
@@ -536,12 +542,12 @@
         <div class="portfolio-item" data-category="frontend-web-app">
           <div class="portfolio-item-inner outer-shadow">
             <div class="portfolio-item-img">
-              <img src="img/portfolio//thumb/project-1.png" alt="portfolio thumb"
+              <img src="img/portfolio//thumb/project-4.png" alt="portfolio thumb"
                 data-screenshot="img/portfolio/large/project-1/1.png,img/portfolio/large/project-1/2.png">
               <!-- view project btn -->
               <span class="view-project">view project</span>
             </div>
-            <p class="portfolio-item-title">Project 4</p>
+            <p class="portfolio-item-title">Banker Hashi</p>
             <!-- portfolio item details start -->
             <div class="portfolio-item-details">
               <div class="row">
@@ -571,12 +577,45 @@
         <div class="portfolio-item" data-category="mobile-app">
           <div class="portfolio-item-inner outer-shadow">
             <div class="portfolio-item-img">
-              <img src="img/portfolio//thumb/project-1.png" alt="portfolio thumb"
+              <img src="img/portfolio//thumb/project-5.jpg" alt="portfolio thumb"
                 data-screenshot="img/portfolio/large/project-1/1.png,img/portfolio/large/project-1/2.png">
               <!-- view project btn -->
               <span class="view-project">view project</span>
             </div>
-            <p class="portfolio-item-title">Project 5</p>
+            <p class="portfolio-item-title">Emergency Numbers Bangladesh</p>
+            <!-- portfolio item details start -->
+            <div class="portfolio-item-details">
+              <div class="row">
+                <div class="descriptiton">
+                  <h3>Project Brief:</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse distinctio ipsa sit minus
+                    voluptatibus vero suscipit maiores odit eveniet dolorem!</p>
+                </div>
+                <div class="info">
+                  <h3>Project info</h3>
+                  <ul>
+                    <li>Date - <span>2020</span></li>
+                    <li>Client - <span>xyz</span></li>
+                    <li>Tools - <span>html, css, javascript</span></li>
+                    <li>Web - <span><a href="#"> www.domain.com</a></span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- portfolio item details end -->
+          </div>
+        </div>
+        <!-- portfolio item end -->
+        <!-- portfolio item start -->
+        <div class="portfolio-item" data-category="frontend-web-app">
+          <div class="portfolio-item-inner outer-shadow">
+            <div class="portfolio-item-img">
+              <img src="img/portfolio//thumb/project-6.png" alt="portfolio thumb"
+                data-screenshot="img/portfolio/large/project-1/1.png,img/portfolio/large/project-1/2.png">
+              <!-- view project btn -->
+              <span class="view-project">view project</span>
+            </div>
+            <p class="portfolio-item-title">Cooking Master</p>
             <!-- portfolio item details start -->
             <div class="portfolio-item-details">
               <div class="row">
@@ -604,6 +643,7 @@
         <!-- .................................................................................................................................... -->
       </div>
       <!-- portfolio items end -->
+
     </div>
   </section>
   <!-- portfolio section end -->
@@ -705,31 +745,33 @@
       </div>
       <div class="row">
         <div class="contact-form">
-          <form action="">
-            <div class="row">
-              <div class="w-50">
-                <div class="input-group outer-shadow hover-in-shadow">
-                  <input type="text" placeholder="Name" class="input-control">
-                </div>
-                <div class="input-group outer-shadow hover-in-shadow">
-                  <input type="email" placeholder="Email" class="input-control">
-                </div>
-                <div class="input-group outer-shadow hover-in-shadow">
-                  <input type="text" placeholder="Subject" class="input-control">
-                </div>
+          <!-- <form id="form"> -->
+          <div class="row">
+            <div class="w-50">
+              <div class="input-group outer-shadow hover-in-shadow">
+                <input id="fromName" type="text" placeholder="Name" class="input-control">
               </div>
-              <div class="w-50">
-                <div class="input-group outer-shadow hover-in-shadow">
-                  <textarea type="textarea" placeholder="Message" class="input-control"></textarea>
-                </div>
+              <div class="input-group outer-shadow hover-in-shadow">
+                <input id="email" type="email" placeholder="Email" class="input-control">
+              </div>
+              <div class="input-group outer-shadow hover-in-shadow">
+                <input id="subject" type="text" placeholder="Subject" class="input-control">
               </div>
             </div>
-            <div class="row">
-              <div class="submit-btn">
-                <button type="submit" class="btn-1 outer-shadow hover-in-shadow">Send Message</button>
+            <div class="w-50">
+              <div class="input-group outer-shadow hover-in-shadow">
+                <textarea id="msg" type="textarea" placeholder="Message" class="input-control"></textarea>
               </div>
             </div>
-          </form>
+          </div>
+          <div class="row">
+            <div class="submit-btn">
+              <!-- <button onclick="sendEmail()" class="btn-1 outer-shadow hover-in-shadow">Send -->
+              <button onclick="sendEmail()" class="btn-1 outer-shadow hover-in-shadow">Send
+                Message</button>
+            </div>
+          </div>
+          <!-- </form> -->
         </div>
       </div>
     </div>
