@@ -1103,3 +1103,11 @@ contact section
   text-align: right;
   padding: 0 15px;
 }
+
+/* ----- 
+blogs
+-------- */
+.blog-section{
+  padding: 80px 0 80px;
+  min-height: 100vh;
+}
