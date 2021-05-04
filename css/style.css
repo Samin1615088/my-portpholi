@@ -850,7 +850,7 @@ portfolio popup
 /* TODO: need to fix this problem */
 .portfolio-popup .description {
   flex: 0 0 60%;
-  max-width: 65%;
+  max-width: 60%;
   padding: 0 15px;
 }
 .portfolio-popup .description p {
@@ -871,6 +871,12 @@ portfolio popup
   text-transform: capitalize;
   font-weight: 600;
   margin: 0 0 5px;
+}
+/* TODO: need to fix this problem */
+.portfolio-popup .info {
+  flex: 0 0 35%;
+  max-width: 35%;
+  padding: 0 15px;
 }
 .portfolio-popup .info a {
   color: var(--skin-color);
@@ -895,12 +901,6 @@ portfolio popup
   transform: capitalize;
 }
 
-/* TODO: need to fix this problem */
-.portfolio-popup .info {
-  /* flex: 0 0 35%;
-  max-width: 35%; */
-  padding: 0 15px;
-}
 .portfolio-popup .info ul li {
   display: block;
   margin-bottom: 10px;
