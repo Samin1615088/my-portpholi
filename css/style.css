@@ -116,6 +116,29 @@ img {
   border-radius: 30px;
 }
 
+.tag-1 {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--skin-color);
+  background-color: transparent;
+  line-height: 1.5;
+  cursor: pointer;
+  border: 1px solid var(--skin-color);
+}
+.tag-1-black {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-black-600);
+  background-color: transparent;
+  line-height: 1.5;
+  cursor: pointer;
+  border: 1px solid var(--text-black-600);
+}
+
 .section-title {
   padding: 0 15px;
   flex: 0 0 100%;
