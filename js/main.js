@@ -155,6 +155,7 @@ function bodyScrollingToggle() {
         projectDetailsBtn.style.display = "block";
         // get the project details
         const details = portfolioItems[itemIndex].querySelector(".portfolio-item-details").innerHTML;
+        console.log("details",details)
         popup.querySelector(".pp-project-details").innerHTML = details;
         const title = portfolioItems[itemIndex].querySelector(".portfolio-item-title").innerHTML;
         popup.querySelector(".pp-title h2").innerHTML = title;
