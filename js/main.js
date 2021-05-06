@@ -1,27 +1,60 @@
-/* --------------- about section tabs --------------*/
+/* ------------- navigation menu -----------*/
 (() => {
-    const aboutSection = document.querySelector(".about-section");
-    const tabsContainer = document.querySelector(".about-tabs");
+    const hamburgerBtn = document.querySelector(".hamburger-btn");
+    const navMenu = document.querySelector(".nav-menu")
+    const closeBtn = document.querySelector(".close-nav-menu");
 
-    tabsContainer.addEventListener('click', (event) => {
-        /* if event.target contains 'tab-item' class and not contains 'active' class */
-        if (event.target.classList.contains("tab-item") && !event.target.classList.contains("active")) {
-            // console.log(event.target);
-            const target = event.target.getAttribute("data-target");
-            // console.log(target);
+    hamburgerBtn.addEventListener("click", showNavMenu)
 
-            //deactivate existing active 'tab-item'
-            tabsContainer.querySelector(".active").classList.remove("outer-shadow", "active");
-            //activate new 'tab-item'
-            event.target.classList.add("active", "outer-shadow");
+    closeBtn.addEventListener("click", hideNavMenu)
 
-            // deactivate existing active 'tab-content'
-            aboutSection.querySelector(".tab-content.active").classList.remove("active");
-            // activate new "tab-content"
-            aboutSection.querySelector(target).classList.add("active");
-        }
-    })
-})();
+    function showNavMenu() {
+        navMenu.classList.add("open");
+        // bodyScrollingToggle();
+        fadeOutEffect();
+    };
+    function hideNavMenu() {
+        navMenu.classList.remove("open");
+        // bodyScrollingToggle();
+        fadeOutEffect();
+    };
+
+    function fadeOutEffect() {
+        document.querySelector(".fade-out-effect").classList.add("active");
+        setTimeout(() => {
+            document.querySelector(".fade-out-effect").classList.remove("active");
+        }, 300);
+    }
+    // window.addEventListener('scroll', () => {
+    //     console.log(" scrolling")
+    //     navMenu.classList.remove("open");
+    // })
+})
+
+    /* --------------- about section tabs --------------*/
+    (() => {
+        const aboutSection = document.querySelector(".about-section");
+        const tabsContainer = document.querySelector(".about-tabs");
+
+        tabsContainer.addEventListener('click', (event) => {
+            /* if event.target contains 'tab-item' class and not contains 'active' class */
+            if (event.target.classList.contains("tab-item") && !event.target.classList.contains("active")) {
+                // console.log(event.target);
+                const target = event.target.getAttribute("data-target");
+                // console.log(target);
+
+                //deactivate existing active 'tab-item'
+                tabsContainer.querySelector(".active").classList.remove("outer-shadow", "active");
+                //activate new 'tab-item'
+                event.target.classList.add("active", "outer-shadow");
+
+                // deactivate existing active 'tab-content'
+                aboutSection.querySelector(".tab-content.active").classList.remove("active");
+                // activate new "tab-content"
+                aboutSection.querySelector(target).classList.add("active");
+            }
+        })
+    });
 
 
 function bodyScrollingToggle() {
@@ -170,9 +203,8 @@ function bodyScrollingToggle() {
 (() => {
     const sections = document.querySelectorAll(".section");
     for (const section of sections) {
-        if(!section.classList.contains("active")){
+        if (!section.classList.contains("active")) {
             section.classList.add("hide");
-            console.log(section)
         }
     }
 })();
