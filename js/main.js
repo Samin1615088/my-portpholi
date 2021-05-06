@@ -55,7 +55,7 @@
                     // console.log("clicked 'link-item' is not contained within the navigation menu");
                     let navItems = navMenu.querySelectorAll(".link-item");
                     navItems.forEach((item) => {
-                        if(hash === item.hash) {
+                        if (hash === item.hash) {
                             // activate new navigation menu 'link-item'
                             event.target.classList.add("active", "inner-shadow");
                             event.target.remove("outer-shadow", "hover-in-shadow");
@@ -64,7 +64,8 @@
                     fadeOutEffect();
                 }
             }
-            console.log(event.target)
+            // adding (#) to url
+            window.location.hash = hash;
         }
     })
 

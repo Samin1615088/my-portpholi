@@ -7,20 +7,24 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <!-- font awesome -->
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  
   <!-- main css -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+
   <!-- default color skin -->
   <link rel="stylesheet" type="text/css" href="css/skins/color-1.css" />
+  
+  <!-- style switcher - for demo purposes only -->
+  <link rel="stylesheet" type="text/css" class="alternate-style" title="color-1" href="css/skins/color-1.css" disabled/>
+  <link rel="stylesheet" type="text/css" class="alternate-style" title="color-2" href="css/skins/color-2.css" disabled/>
+  <link rel="stylesheet" type="text/css" class="alternate-style" title="color-3" href="css/skins/color-3.css" disabled/>
+  <link rel="stylesheet" type="text/css" class="alternate-style" title="color-4" href="css/skins/color-4.css" disabled/>
+  <link rel="stylesheet" type="text/css" class="alternate-style" title="color-5" href="css/skins/color-5.css" disabled/>
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("user_5BW8l8ebdIkqHhXb0pkd9");
-    })();
-  </script>
+  <link rel="stylesheet" type="text/css" href="css/style-switcher.css" />
 </head>
 
-<body>
+<body >
   <!--header start  -->
   <header class="header">
     <div class="container">
@@ -756,6 +760,26 @@
     </div>
   </div>
   <!-- portfolio popup end -->
+
+
+  <!-- style switcher start - for demo purposes only  -->
+  <div class="style-switcher outer-shadow">
+    <div class="style-switcher-toggler outer-shadow hover-in-shadow s-icon">
+      <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night outer-shadow hover-in-shadow s-icon">
+      <i class="fas fa-moon "></i>
+    </div>
+
+    <h4>Theme Colors</h4>
+    <div class="colors">
+      <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+      <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+      <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+  </div>
 
   <!-- TODO: TESTIMONIAL START-->
   <!-- TODO: TESTIMONIAL END-->
