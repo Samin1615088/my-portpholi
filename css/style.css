@@ -130,6 +130,7 @@ img {
 .tag-1-black {
   display: inline-block;
   padding: 0 5px;
+  margin: 2px 4px;
   font-size: 16px;
   font-weight: 500;
   color: var(--text-black-600);
