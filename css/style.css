@@ -262,6 +262,10 @@ img {
     transform: translateY(50px);
   }
 }
+
+.section.hide {
+  display: none;
+}
 /* ------ 
 header
 --------- */

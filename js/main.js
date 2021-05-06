@@ -155,7 +155,7 @@ function bodyScrollingToggle() {
         projectDetailsBtn.style.display = "block";
         // get the project details
         const details = portfolioItems[itemIndex].querySelector(".portfolio-item-details").innerHTML;
-        console.log("details",details)
+        console.log("details", details)
         popup.querySelector(".pp-project-details").innerHTML = details;
         const title = portfolioItems[itemIndex].querySelector(".portfolio-item-title").innerHTML;
         popup.querySelector(".pp-title h2").innerHTML = title;
@@ -163,6 +163,21 @@ function bodyScrollingToggle() {
         popup.querySelector(".pp-project-category").innerHTML = category.split("-").join(" ");
     }
 })();
+
+
+/* --------------------hide all sections except active------------------------ */
+
+(() => {
+    const sections = document.querySelectorAll(".section");
+    for (const section of sections) {
+        if(!section.classList.contains("active")){
+            section.classList.add("hide");
+            console.log(section)
+        }
+    }
+})();
+
+
 
 /* -----------------email.js  start---------------*/
 function sendEmail(params) {
